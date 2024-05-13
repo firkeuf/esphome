@@ -21,6 +21,11 @@ enum ImageFormat {
   PNG,
 };
 
+// Workaround for older (< 2024.5.0) versions
+#ifndef ESPHOME_ALWAYS_INLINE
+#define ESPHOME_ALWAYS_INLINE ALWAYS_INLINE
+#endif
+
 /**
  * @brief Download an image from a given URL, and decode it using the specified decoder.
  * The image will then be stored in a buffer, so that it can be displayed.
