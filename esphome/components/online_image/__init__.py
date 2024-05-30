@@ -101,10 +101,10 @@ CONFIG_SCHEMA = cv.Schema(
     cv.All(
         ONLINE_IMAGE_SCHEMA,
         validate_cross_dependencies,
-        cv.require_framework_version(
-            esp8266_arduino=cv.Version(2, 7, 0),
-            esp32_arduino=cv.Version(0, 0, 0),
-        ),
+        #cv.require_framework_version(
+        #    esp8266_arduino=cv.Version(2, 7, 0),
+        #    esp32_arduino=cv.Version(0, 0, 0),
+        #),
     )
 )
 
