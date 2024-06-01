@@ -144,7 +144,7 @@ async def to_code(config):
 
     if CORE.is_esp32:
         cg.add_library("WiFiClientSecure", None)
-        cg.add_library("HTTPClient", None)
+        cg.add_library("amcewen/HttpClient@2.2.0", None)
     if CORE.is_esp8266:
         cg.add_library("ESP8266HTTPClient", None)
 
